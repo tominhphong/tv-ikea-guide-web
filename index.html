@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IKEA Smart TV Ad-Free YouTube &amp; CleanYourTV Visual Guide</title>
+  <meta name="description" content="Cẩm nang hướng dẫn trực quan phong cách lắp ráp IKEA: Xem YouTube không quảng cáo và tối ưu hóa hệ thống cho Android TV, Samsung Tizen OS, LG webOS và Cứu hộ khẩn cấp.">
+  <meta name="theme-color" content="#0058A9">
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230058A9'/><text x='50' y='68' font-size='60' font-weight='900' text-anchor='middle' fill='%23FFDA1A'>TV</text></svg>">
+
+  <!-- Modular IKEA Stylesheets -->
+  <link rel="stylesheet" href="css/ikea-variables.css">
+  <link rel="stylesheet" href="css/ikea-layout.css">
+  <link rel="stylesheet" href="css/ikea-components.css">
+</head>
+<body>
+
+  <!-- Hidden SVG Sprite Definitions -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Reusable Arrow Marker -->
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--svg-stroke)" />
+      </marker>
+    </defs>
+  </svg>
+
+  <!-- Master Layout Container -->
+  <div class="manual-container">
+
+    <!-- Header & Brand Bar -->
+    <header class="manual-header">
+      <div class="header-top">
+        <div class="brand-badge">
+          <div class="ikea-logo-box">IKEA</div>
+          <span class="manual-model-no">ART. NO. 2026.11.14 • VISUAL MANUAL</span>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="btn-theme-toggle" aria-label="Chuyển đổi giao diện sáng tối">
+            🌙 Chế độ Blueprint CAD
+          </button>
+        </div>
+      </div>
+      <h1 class="manual-title">SMART TV YOUTUBE ADFREE &amp; DEBLOAT</h1>
+      <p class="manual-subtitle">Cẩm nang hướng dẫn lắp ráp &amp; cấu hình trực quan không quảng cáo chuẩn IKEA cho Smart TV</p>
+    </header>
+
+    <!-- Platform Navigation Tabs -->
+    <nav class="platform-nav-wrap" aria-label="Chọn nền tảng Smart TV">
+      <div class="platform-nav" role="tablist">
+        <button type="button" class="nav-tab active" role="tab" aria-selected="true" data-platform="android" id="tab-android">
+          <span class="tab-icon">📱</span>
+          <span>Android / Google TV</span>
+        </button>
+        <button type="button" class="nav-tab" role="tab" aria-selected="false" data-platform="samsung" id="tab-samsung">
+          <span class="tab-icon">📺</span>
+          <span>Samsung Tizen OS</span>
+        </button>
+        <button type="button" class="nav-tab" role="tab" aria-selected="false" data-platform="lg" id="tab-lg">
+          <span class="tab-icon">🪄</span>
+          <span>LG webOS</span>
+        </button>
+        <button type="button" class="nav-tab" role="tab" aria-selected="false" data-platform="troubleshooting" id="tab-troubleshooting">
+          <span class="tab-icon">🛠️</span>
+          <span>Sổ Tay Xử Lý Sự Cố</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Stepper Progress Header -->
+    <section class="stepper-header" aria-label="Tiến trình hoàn thành các bước">
+      <div class="stepper-top-bar">
+        <div class="stepper-status-text" id="stepper-status-text">
+          <span>Đang tải tiến trình...</span>
+        </div>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;"></div>
+      </div>
+      <div class="step-pills-container" id="step-pills-container">
+        <!-- Step pills generated via js/app.js -->
+      </div>
+    </section>
+
+    <!-- Main Booklet Spread (2 Columns on Desktop) -->
+    <main class="booklet-spread">
+
+      <!-- Left Sidebar: Tools, Checklist & Table of Contents -->
+      <aside class="booklet-sidebar">
+        <!-- Platform Info Card -->
+        <div class="sidebar-card">
+          <span class="step-badge" id="platform-badge" style="background-color: var(--ikea-blue); width: auto; height: auto; padding: 0.25rem 0.6rem; border-radius: var(--radius-sm); font-size: 0.75rem; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+            PLATFORM
+          </span>
+          <h2 id="platform-title" style="font-size: 1.25rem; font-weight: 800; line-height: 1.25; margin-bottom: 0.35rem;">Tiêu đề nền tảng</h2>
+          <p id="platform-subtitle" style="font-size: 0.85rem; color: var(--ikea-ink-secondary); line-height: 1.4;">Mô tả chi tiết</p>
+        </div>
+
+        <!-- Hardware Checklist -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-title">
+            <span>📦</span>
+            <span>Dụng cụ cần chuẩn bị</span>
+          </h3>
+          <ul class="tools-list" id="tools-list">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <!-- Steps TOC -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-title">
+            <span>📑</span>
+            <span>Các bước thao tác</span>
+          </h3>
+          <ul class="steps-toc-list" id="steps-toc-list">
+            <!-- Rendered dynamically -->
+          </ul>
+        </div>
+
+        <!-- Safety Assurance Badge -->
+        <div class="sidebar-card" style="background-color: var(--ikea-paper-elevated); border-style: dashed;">
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+            <span style="font-size: 1.5rem;">🛡️</span>
+            <strong style="font-size: 0.95rem;">TIÊU CHUẨN AN TOÀN ZERO-BRICK</strong>
+          </div>
+          <p style="font-size: 0.8rem; line-height: 1.5; color: var(--ikea-ink-secondary);">
+            Tất cả giải pháp trong cẩm nang đều sử dụng quyền chính thức của nhà phát triển (Developer Mode) và đóng băng tiến trình cấp người dùng. Không Root máy, không can thiệp phân vùng hệ thống, bảo toàn 100% bảo hành của TV.
+          </p>
+        </div>
+      </aside>
+
+      <!-- Right Column: Interactive Assembly Steps -->
+      <section class="booklet-stage" id="booklet-stage-container" aria-label="Nội dung cẩm nang các bước">
+        <!-- Rendered dynamically via js/app.js -->
+      </section>
+
+    </main>
+
+  </div><!-- /manual-container -->
+
+  <!-- Sticky Bottom Floating Bar for Prev / Next Navigation -->
+  <footer class="floating-bottom-bar">
+    <div class="floating-bottom-inner">
+      <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="btn-prev-step" disabled>
+        <span>← Bước trước</span>
+      </button>
+
+      <div style="font-size: 0.825rem; font-weight: 600; color: var(--ikea-ink-secondary);" class="footer-links">
+        <span>© 2026 IKEA Smart TV Manual • MIT License • </span>
+        <a href="https://github.com/tominhphong/tv-ikea-guide-web" target="_blank" rel="noopener" style="color: var(--ikea-blue); text-decoration: none; font-weight: 700;">GitHub Source</a>
+      </div>
+
+      <button type="button" class="ikea-btn ikea-btn-primary ikea-btn-sm" id="btn-next-step">
+        <span>Bước tiếp theo →</span>
+      </button>
+    </div>
+  </footer>
+
+  <!-- SVG Pan/Zoom Lightbox Modal -->
+  <div class="modal-backdrop" id="svg-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Sơ đồ lắp ráp IKEA</h3>
+        <div class="modal-controls">
+          <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="modal-zoom-out" title="Thu nhỏ (-)">➖</button>
+          <span id="modal-scale-display" style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; min-width: 45px; text-align: center;">100%</span>
+          <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="modal-zoom-in" title="Phóng to (+)">➕</button>
+          <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="modal-zoom-reset" title="Đặt lại (100%)">⟲ Đặt lại</button>
+          <button type="button" class="ikea-btn ikea-btn-secondary ikea-btn-sm" id="modal-close-btn" title="Đóng (ESC)" style="font-weight: 900;">✕</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-viewport" id="modal-viewport">
+          <!-- SVG injected here -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span>💡 Cuộn chuột hoặc chụm ngón tay để phóng to / Thu nhỏ • Giữ chuột kéo để di chuyển sơ đồ</span>
+        <span>Phím ESC để đóng</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

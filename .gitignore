@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+verification_desktop.png
+verification_mobile.png
+verification_screenshot.png
+.DS_Store

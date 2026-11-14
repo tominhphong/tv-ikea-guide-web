@@ -1,0 +1,115 @@
+/* ==========================================================================
+   IKEA DESIGN SYSTEM VARIABLES (css/ikea-variables.css)
+   Authentic Minimalist Manual Theme: Classic Paper & Blueprint CAD (Dark)
+   ========================================================================== */
+
+:root {
+  /* IKEA Visual Palette - Light Mode (Classic Manual Paper) */
+  --ikea-paper: #FBFBF9;
+  --ikea-paper-card: #FFFFFF;
+  --ikea-paper-elevated: #F4F4F1;
+  --ikea-ink: #111111;
+  --ikea-ink-secondary: #4B5563;
+  --ikea-ink-muted: #6B7280;
+  --ikea-border: #D1D5DB;
+  --ikea-border-dark: #111111;
+
+  /* Brand Accents */
+  --ikea-blue: #0058A9;
+  --ikea-blue-hover: #004585;
+  --ikea-blue-light: #EBF4FF;
+  --ikea-yellow: #FFDA1A;
+  --ikea-yellow-hover: #E5C316;
+  --ikea-yellow-soft: #FEF9C3;
+
+  /* Status Colors */
+  --ikea-success: #16A34A;
+  --ikea-success-hover: #15803D;
+  --ikea-success-bg: #DCFCE7;
+  --ikea-danger: #DC2626;
+  --ikea-danger-hover: #B91C1C;
+  --ikea-danger-bg: #FEE2E2;
+  --ikea-warning-border: #F59E0B;
+  --ikea-warning-bg: #FEF3C7;
+
+  /* Code & Syntax */
+  --ikea-code-bg: #F3F4F6;
+  --ikea-code-border: #E5E7EB;
+  --ikea-code-text: #1F2937;
+  --ikea-code-pill: #111827;
+
+  /* Stroke Weights (IKEA Technical Line-art Standard) */
+  --stroke-heavy: 2.5px;
+  --stroke-medium: 1.8px;
+  --stroke-light: 1.0px;
+  --stroke-dash: 4 3;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, "Liberation Mono", Courier, monospace;
+
+  /* Spacing & Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  --shadow-paper: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* SVG Theme Variables */
+  --svg-stroke: #111111;
+  --svg-fill-white: #FFFFFF;
+  --svg-fill-gray: #E5E7EB;
+  --svg-accent-blue: #0058A9;
+  --svg-accent-yellow: #FFDA1A;
+}
+
+/* Blueprint CAD Theme (Dark Mode) */
+[data-theme="dark"] {
+  --ikea-paper: #0F172A;
+  --ikea-paper-card: #1E293B;
+  --ikea-paper-elevated: #334155;
+  --ikea-ink: #F8FAFC;
+  --ikea-ink-secondary: #94A3B8;
+  --ikea-ink-muted: #64748B;
+  --ikea-border: #334155;
+  --ikea-border-dark: #F8FAFC;
+
+  --ikea-blue: #38BDF8;
+  --ikea-blue-hover: #0284C7;
+  --ikea-blue-light: #082F49;
+  --ikea-yellow: #FBBF24;
+  --ikea-yellow-hover: #D97706;
+  --ikea-yellow-soft: #451A03;
+
+  --ikea-success: #22C55E;
+  --ikea-success-hover: #16A34A;
+  --ikea-success-bg: #064E3B;
+  --ikea-danger: #EF4444;
+  --ikea-danger-hover: #DC2626;
+  --ikea-danger-bg: #7F1D1D;
+  --ikea-warning-border: #D97706;
+  --ikea-warning-bg: #422006;
+
+  --ikea-code-bg: #090D16;
+  --ikea-code-border: #1E293B;
+  --ikea-code-text: #38BDF8;
+  --ikea-code-pill: #38BDF8;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-paper: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+  --svg-stroke: #F8FAFC;
+  --svg-fill-white: #1E293B;
+  --svg-fill-gray: #334155;
+  --svg-accent-blue: #38BDF8;
+  --svg-accent-yellow: #FBBF24;
+}
