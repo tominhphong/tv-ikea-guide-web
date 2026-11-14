@@ -356,10 +356,16 @@ class IkeaGuideApp {
   }
 
   isStepCompleted(stepId) {
+    if (!this.completedSteps || typeof this.completedSteps !== 'object' || Array.isArray(this.completedSteps)) {
+      this.completedSteps = {};
+    }
     return !!this.completedSteps[stepId];
   }
 
   toggleStepCompleted(stepId) {
+    if (!this.completedSteps || typeof this.completedSteps !== 'object' || Array.isArray(this.completedSteps)) {
+      this.completedSteps = {};
+    }
     if (this.completedSteps[stepId]) {
       delete this.completedSteps[stepId];
     } else {
@@ -393,17 +399,22 @@ class IkeaGuideApp {
   loadCompletedSteps() {
     try {
       const stored = localStorage.getItem('ikea_guide_completed_steps');
-      return stored ? JSON.parse(stored) : {};
+      if (!stored) return {};
+      const parsed = JSON.parse(stored);
+      return (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) ? parsed : {};
     } catch {
       return {};
     }
   }
 
-  saveCompletedSteps() {
+  saveCompletedSteps(data) {
     try {
-      localStorage.setItem('ikea_guide_completed_steps', JSON.stringify(this.completedSteps));
-    } catch {
-      // Storage unavailable fallback
+      const target = data !== undefined ? data : this.completedSteps;
+      const toSave = (target && typeof target === 'object' && !Array.isArray(target)) ? target : {};
+      this.completedSteps = toSave;
+      localStorage.setItem('ikea_guide_completed_steps', JSON.stringify(toSave));
+    } catch (e) {
+      console.warn('Failed to save progress to localStorage', e);
     }
   }
 

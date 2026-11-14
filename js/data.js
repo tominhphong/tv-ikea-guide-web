@@ -108,13 +108,13 @@ const GUIDE_DATA = {
         </g>
         <!-- Warning Banner -->
         <rect x="50" y="320" width="700" height="48" rx="8" fill="var(--ikea-danger)" stroke="var(--svg-stroke)" stroke-width="2.5" />
-        <text x="400" y="352" font-family="sans-serif" font-weight="900" font-size="20" text-anchor="middle" fill="#FFFFFF">⚠️ CHÚ Ý: ĐỌC KỸ BẪY NGẦM OEM & KHÔNG TẮT GÓI HDMI HỆ THỐNG</text>
+        <text x="400" y="352" font-family="sans-serif" font-weight="900" font-size="20" text-anchor="middle" fill="#FFFFFF">⚠️ CHÚ Ý: ĐỌC KỸ BẪY NGẦM OEM &amp; KHÔNG TẮT GÓI HDMI HỆ THỐNG</text>
       </svg>
     `,
     toolsInventory: `
       <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" class="ikea-svg">
         <rect x="10" y="10" width="780" height="340" rx="16" fill="var(--svg-fill-white)" stroke="var(--svg-stroke)" stroke-width="2.5" />
-        <text x="400" y="45" font-family="sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="var(--svg-stroke)">DANH MỤC DỤNG CỤ CẦN CHUẨN BỊ (HARDWARE & TOOLS CHECKLIST)</text>
+        <text x="400" y="45" font-family="sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="var(--svg-stroke)">DANH MỤC DỤNG CỤ CẦN CHUẨN BỊ (HARDWARE &amp; TOOLS CHECKLIST)</text>
         <line x1="40" y1="65" x2="760" y2="65" stroke="var(--svg-stroke)" stroke-width="1.5" stroke-dasharray="4 3" />
         <!-- Tool 1: Smart TV -->
         <g transform="translate(60, 95)">
